@@ -1,0 +1,101 @@
+.file-upload {
+
+  .controls {
+    display: flex;
+    margin: 0 0 15px;
+
+    &__item {
+      margin: 0 10px 0 0;
+
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+
+  .file-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .file-item {
+    margin: 0 10px 10px 0;
+
+    &__preview {
+      width: 120px;
+      height: 70px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+
+      img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+      }
+    }
+
+    &__aside {
+      margin: 0 0 5px;
+    }
+
+    &__main {
+      display: flex;
+      font-size: 12px;
+    }
+
+    &__name {
+      max-width: 70px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+    &__size {
+      margin: 0 0 0 2px;
+
+      &:before {
+        content: '(';
+      }
+
+      &:after {
+        content: ')';
+      }
+    }
+
+    &__remove {
+      position: relative;
+      top: 1px;
+      right: -2px;
+      width: 12px;
+      height: 12px;
+      cursor: pointer;
+
+      &:before, &:after {
+        position: absolute;
+        content: '';
+        width: 2px;
+        height: 100%;
+        background-color: tomato;
+        left: 50%;
+        top: 50%;
+      }
+
+      &:before {
+        transform: translate(-50%, -50%) rotate(45deg);
+      }
+
+      &:after {
+        transform: translate(-50%, -50%) rotate(-45deg);
+      }
+    }
+  }
+
+  .message-container {
+    margin: 15px 0;
+
+    &__text--error {
+      color: red;
+    }
+  }
+}

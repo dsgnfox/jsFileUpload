@@ -1,0 +1,93 @@
+.file-upload .controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 0 15px;
+}
+.file-upload .controls__item {
+  margin: 0 10px 0 0;
+}
+.file-upload .controls__item:last-child {
+  margin: 0;
+}
+.file-upload .file-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.file-upload .file-item {
+  margin: 0 10px 10px 0;
+}
+.file-upload .file-item__preview {
+  width: 120px;
+  height: 70px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.file-upload .file-item__preview img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.file-upload .file-item__aside {
+  margin: 0 0 5px;
+}
+.file-upload .file-item__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 12px;
+}
+.file-upload .file-item__name {
+  max-width: 70px;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.file-upload .file-item__size {
+  margin: 0 0 0 2px;
+}
+.file-upload .file-item__size:before {
+  content: '(';
+}
+.file-upload .file-item__size:after {
+  content: ')';
+}
+.file-upload .file-item__remove {
+  position: relative;
+  top: 1px;
+  right: -2px;
+  width: 12px;
+  height: 12px;
+  cursor: pointer;
+}
+.file-upload .file-item__remove:before,
+.file-upload .file-item__remove:after {
+  position: absolute;
+  content: '';
+  width: 2px;
+  height: 100%;
+  background-color: tomato;
+  left: 50%;
+  top: 50%;
+}
+.file-upload .file-item__remove:before {
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+      -ms-transform: translate(-50%, -50%) rotate(45deg);
+          transform: translate(-50%, -50%) rotate(45deg);
+}
+.file-upload .file-item__remove:after {
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+      -ms-transform: translate(-50%, -50%) rotate(-45deg);
+          transform: translate(-50%, -50%) rotate(-45deg);
+}
+.file-upload .message-container {
+  margin: 15px 0;
+}
+.file-upload .message-container__text--error {
+  color: red;
+}
