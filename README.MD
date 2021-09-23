@@ -2,6 +2,8 @@
 
 Удобная загрузка и отправка файлов из формы
 
+[DEMO](https://dsgnfox.github.io/jsfileupload/index.html)
+
 ## Как использовать:
 Инпут обязательно должен быть внутри тэга form. Для корректной работы отправки файлов у тэга form указываем enctype="multipart/form-data"
 
